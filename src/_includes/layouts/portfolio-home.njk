@@ -3,22 +3,15 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-{# from https://glitch.com/edit/#!/playable-quotes-sample-articles?path=src%2F_includes%2Flayouts%2Fhome.njk}
-
-{# The Home page uses this template–it extends the base template #}
+{# This is the template for the Posts page–it lists the posts in the collection #}
 
 <div class="wrapper home">
   <div class="content">
     {{ content | safe }}
-    
-    {# After the the content defined in index.md, list the blog posts in the collection #}
     <ul>
       {%- for post in collections.portfolio -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>
       {%- endfor -%}
-      <li><a href="/portfolio">View all Projects</a></li>
     </ul>
   </div>
 </div>
-
-

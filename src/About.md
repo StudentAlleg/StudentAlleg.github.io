@@ -2,4 +2,4 @@
 layout: layouts/base.njk 
 --- 
   
-{Name}'s In progress Eleventy Portfolio/Main website site.
+{Name}'s In progress Eleventy portfolio/Main website site.

@@ -1,0 +1,17 @@
+{
+  "name": "studentalleg.github.io",
+  "version": "1.0.0",
+  "description": "Student's base page",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "jest"
+},
+  "author": "Student",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -9,6 +9,9 @@ Thumbs.db
 .env
 .cache
 
+#eleventy build
+./_site
+
 # Node modules and output
 node_modules
 dist

@@ -2,7 +2,4 @@
 layout: layouts/portfolio-home.njk 
 --- 
 
-Base page for portfolio:
-
-TODO:
-Add every sub page automatically
+Here is a list of some projects that I have contributed to or built over the years. Many of them are game related, but also demonstrate different technical skills and capabilities.

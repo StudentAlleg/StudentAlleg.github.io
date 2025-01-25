@@ -8,8 +8,11 @@ templateClass: tmpl-home
 <div class="wrapper portfolio">
   <div>
     {# The post front matter includes the title property #}
-    <h1 class='portfolioTitle'>{{title}}</h1>
+    {# On click navigate to the link #}
+    <a href={{link}}><h1 class='portfolioTitle'
 
+      >{{title}}</h1></a>
+      {#onclick="location.href='{{link}}'"#}
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
     
     {# Content from the body of the post markdown appears here #}

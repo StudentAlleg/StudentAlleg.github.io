@@ -12,6 +12,12 @@ layout: layouts/portfolio.njk
 
 ## Overview
 A very simple [discord.py](https://discordpy.readthedocs.io/en/stable/) python discord bot, run locally on my laptop. Takes user input, formats it, and edits current message.
+### Skills Demonstrated
+* Create a discord bot
+* Install python packages
+* Identify a problem and create a solution
+* Git version control
+* Discord.py
 
 
 ## Problem
@@ -35,8 +41,14 @@ In a channel there is a single message, that holds all the stockpiles, correctly
 
 ## Reflection
 ### New Knowledge
+* Storing and retrieving information from file
+* Deserialize string into python objects
+* Serialize python objects into string
+* Install python packages
+* Create a Python discord bot
 
 ### Usage
+The bot did work and was usable. The problem was that it was clunky to use for other people. People did not like having to learn how to use my specific bot, so it ended up just being something that I used. It did not help that the bot was hosted on my laptop and was therefore only usable when my laptop was powered on. As my regiment became more and more inactive, it eventually no longer saw any use, as we reverted back to previous ways.
 
 ### How would I make it today
 One of the tricky bits was creating the data structure and having persistent storage that did not rely on the discord message. I did the data structure correctly, by making it a class, though it was entangled a little bit with persistent storage. Still, fine for a small personal project. I would change how I did the persistant storage and instead use a database, probably a mysql .db file. This would make it easier to retrieve and store information.

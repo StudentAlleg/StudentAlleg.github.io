@@ -10,6 +10,11 @@ a:hover {
     color: darksalmon;
 }
 
+.portfolioTitle:hover {
+    color: darksalmon;
+    cursor: pointer;
+}
+
 body {
     background-color:antiquewhite;
     font: "Courier New";
@@ -24,6 +29,7 @@ body {
 
 .portfolioTitle {
     text-decoration: underline;
+    color: black;
     text-decoration-color: goldenrod;
 }
 

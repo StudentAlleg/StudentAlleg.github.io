@@ -24,13 +24,24 @@
 <div class="wrapper portfolio">
   <div>
     
-    <h1 class='portfolioTitle'>Foxhole Stockpiles Discord Bot</h1>
+    
+    <a href=https://github.com/StudentAlleg/foxhole-stockpiles><h1 class='portfolioTitle'
 
+      >Foxhole Stockpiles Discord Bot</h1></a>
+      
     
     
     
     <h2>Overview</h2>
 <p>A very simple <a href="https://discordpy.readthedocs.io/en/stable/">discord.py</a> python discord bot, run locally on my laptop. Takes user input, formats it, and edits current message.</p>
+<h3>Skills Demonstrated</h3>
+<ul>
+<li>Create a discord bot</li>
+<li>Install python packages</li>
+<li>Identify a problem and create a solution</li>
+<li>Git version control</li>
+<li>Discord.py</li>
+</ul>
 <h2>Problem</h2>
 <p><a href="https://www.foxholegame.com/">Foxhole</a> is a persistent online War lasting weeks at a time, where other games might last hours. Players group into Regiments (sometimes called Clans or Guilds in other games), to work closer together, allowing coordinated efforts. As everything in the game is made by Players, there are places that we can store various items (materials, weapons, vehicles etc.) for later use or staging for an upcoming operation. These are stockpiles and we can create them at certain structures on the map.</p>
 <h3>Stockpiles</h3>
@@ -46,7 +57,15 @@
 <p>In a channel there is a single message, that holds all the stockpiles, correctly formatted. This is backed by by a text file, that acts as a database</p>
 <h2>Reflection</h2>
 <h3>New Knowledge</h3>
+<ul>
+<li>Storing and retrieving information from file</li>
+<li>Deserialize string into python objects</li>
+<li>Serialize python objects into string</li>
+<li>Install python packages</li>
+<li>Create a Python discord bot</li>
+</ul>
 <h3>Usage</h3>
+<p>The bot did work and was usable. The problem was that it was clunky to use for other people. People did not like having to learn how to use my specific bot, so it ended up just being something that I used. It did not help that the bot was hosted on my laptop and was therefore only usable when my laptop was powered on. As my regiment became more and more inactive, it eventually no longer saw any use, as we reverted back to previous ways.</p>
 <h3>How would I make it today</h3>
 <p>One of the tricky bits was creating the data structure and having persistent storage that did not rely on the discord message. I did the data structure correctly, by making it a class, though it was entangled a little bit with persistent storage. Still, fine for a small personal project. I would change how I did the persistant storage and instead use a database, probably a mysql .db file. This would make it easier to retrieve and store information.</p>
 <p>I would also set it up on a Raspberry PI like my later <a href="/portfolio/discord-bot-allegiance">Allegiance Discord Bot</a>.</p>

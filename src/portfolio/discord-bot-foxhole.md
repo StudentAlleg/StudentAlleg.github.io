@@ -15,7 +15,6 @@ A very simple [discord.py](https://discordpy.readthedocs.io/en/stable/) python d
 
 
 ## Problem
-### Background
 [Foxhole](https://www.foxholegame.com/) is a persistent online War lasting weeks at a time, where other games might last hours. Players group into Regiments (sometimes called Clans or Guilds in other games), to work closer together, allowing coordinated efforts. As everything in the game is made by Players, there are places that we can store various items (materials, weapons, vehicles etc.) for later use or staging for an upcoming operation. These are stockpiles and we can create them at certain structures on the map.
 
 ### Stockpiles
@@ -23,9 +22,23 @@ These give 6 digit codes, which can be shared with others so that they can acces
 
 
 ## My Solution
-Building off of the single person editing a message to update the list of stockpiles, I could just create a discord bot, so that anyone could add or remove a message! This removes the reliance on a single person while keeping the benefits of a nicely.
+Building off of the single person editing a message to update the list of stockpiles, I could just create a discord bot, so that anyone could add or remove a message! This removes the reliance on a single person while keeping the benefits of a nicely formatted single message, easy to find what you want.
+<b>INSERT IMAGE OF NEW FORMAT</b>
 
 ### How it works
+#### Bot
+Using [discord.py](https://discordpy.readthedocs.io/en/stable/), we can create text commands that users can run. We add the following capabilties. We can add a new code, remove an expired code, create a new stockpile message, and delete the current stockpile message.
 
+This interface allows users
+#### Stockpile
+In a channel there is a single message, that holds all the stockpiles, correctly formatted. This is backed by by a text file, that acts as a database
 
 ## Reflection
+### New Knowledge
+
+### Usage
+
+### How would I make it today
+One of the tricky bits was creating the data structure and having persistent storage that did not rely on the discord message. I did the data structure correctly, by making it a class, though it was entangled a little bit with persistent storage. Still, fine for a small personal project. I would change how I did the persistant storage and instead use a database, probably a mysql .db file. This would make it easier to retrieve and store information.
+
+I would also set it up on a Raspberry PI like my later [Allegiance Discord Bot](/portfolio/discord-bot-allegiance).

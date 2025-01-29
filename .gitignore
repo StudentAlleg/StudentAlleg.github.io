@@ -10,7 +10,7 @@ Thumbs.db
 .cache
 
 #eleventy build
-./_site
+_site
 
 # Node modules and output
 node_modules

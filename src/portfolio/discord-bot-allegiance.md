@@ -24,6 +24,12 @@ A small [discord.py](https://discordpy.readthedocs.io/en/stable/) discord bot th
 * Git version control
 * Request from API
 * Linux
-* Systems on Linux (todo correct phraseology)
+* Linux Services
+* SSH
 
 ## My Solution
+Since I have already [made a discord bot in the past](/portfolio/discord-bot-foxhole), I had a strong foundation with which to base this [discord.py](https://discordpy.readthedocs.io/en/stable/) bot on. The [Steam API](https://steamcommunity.com/dev) has a handy API that when queried returns the number of players currently in a specific game. Pass in the game id and our API key, and we have the data we need.
+So just send a message everytime that number changes and that would be fine!
+### Permanance
+Running a discord bot 
+

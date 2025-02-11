@@ -11,6 +11,7 @@ tags:
   - prototyping
 layout: layouts/portfolio.njk
 ---
+# WIP
 ## Overview
 An internship with [Dr. Adam Smith](https://campusdirectory.ucsc.edu/cd_detail?uid=amsmith) on the [Playable Quotes](https://tenmile.quote.games/) project.
 ### Skills Demonstrated

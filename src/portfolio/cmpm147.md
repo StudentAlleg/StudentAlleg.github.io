@@ -9,8 +9,10 @@ tags:
   - C++
 layout: layouts/portfolio.njk
 ---
-
+# WIP
 ## Overview
 TODO : Overview what learned / Did
+
+Primarily did generative design experiments using P5.js
 
 Site https://studentalleg.github.io/cmpm147/

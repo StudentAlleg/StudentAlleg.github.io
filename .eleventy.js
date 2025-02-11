@@ -2,6 +2,9 @@
 
 const { DateTime } = require("luxon");
 
+const firstName = process.env.FIRST_NAME;
+const lastName = process.env.LAST_NAME;
+
 /**
 * This is the JavaScript code that determines the config for your Eleventy site
 *

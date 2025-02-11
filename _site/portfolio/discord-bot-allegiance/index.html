@@ -42,7 +42,7 @@
 <li>Git version control</li>
 <li>Request from API</li>
 <li>Linux</li>
-<li>Linux Services</li>
+<li>Linux Systemd</li>
 <li>SSH</li>
 </ul>
 <h2>My Solution</h2>
@@ -51,6 +51,21 @@ So just send a message everytime that number changes and that would be fine!</p>
 <h3>Permanance</h3>
 <p>Running a discord bot from my local machine does not work very well. People assume that the bot will always be up. For this specific bot, most of the time it will be used between Fridays and Sundays. I chose to use a <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Respberry Pi Zero</a> to host my bot on, because it is cheap and easy to use. Since my bot does not use many resources, it was perfect for my usecase.</p>
 <h4>Setup</h4>
+<p>After porting it to my <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Respberry Pi Zero</a> (I develop on Windows), we need to set it up to run automatically. RaspberryPi has systemmd's that we can define in a <code>.service</code> file, and then enable. <a href="https://linuxhandbook.com/create-systemd-services/">Here</a> is a decent tutorial describing the process. From there, we can make it run on the startup and automatically retry if anything fails.</p>
+<h3>Continued Improvements</h3>
+<p>While the bot worked, and was now always online, there was a few pain points. It was unclear whether the bot was online and working, or if there was just a long period between player count changes. <a href="https://store.steampowered.com/app/700480/Microsoft_Allegiance/">Allegiance</a> does not see many players during the week, so it is not uncommon for the number online to settle at 1 or 2 (presumably someone just leaving it open on their computer). There was no way to check. To improve user experience, I added 2 things. The first being a command that the user could run, which would send them the current player count. The second being a counter of the number of times the bot had checked the API. These allowed users to see that the bot was working, online, and confirmed the current status.</p>
+<h2>Reflection</h2>
+<h3>New Knowledge</h3>
+<ul>
+<li>RaspberryPi</li>
+<li>Linux Systemmd</li>
+<li>Python virtual environments</li>
+<li>API Request</li>
+</ul>
+<h3>Usage</h3>
+<p>For the scope of the project, it is just about perfect. Cheap, simple to run, and did not take a lot of development time. It stayed on scope and does what it needs to do. It outputs regulary in a discord channel setup for it, so sees use weekly. There is very little maintenance to do, after about a month of occasionally needing to fix a problem, I no longer need to do anything with it. Every so often I will manually restart the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Respberry Pi Zero</a>, but I really do not need to do that.</p>
+<h3>How would I make it today</h3>
+<p>There is only really 2 problems that bother me today. First, it does not do dependency management at all. Python usually uses a <code>requirements.txt</code> file, this does not have it, meaning that if I or anyone else was to put it onto a different machine, it would have to be done manually. Second, it does not do secrets correctly. It should use a <code>.env</code> file, for things like the API key. Instead it uses a file called <code>key.py</code> that stores these as variables that are then imported.</p>
 
     <div class="controls">
     

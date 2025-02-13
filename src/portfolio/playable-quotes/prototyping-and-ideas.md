@@ -1,13 +1,12 @@
 ---
-title: Playable Quotes Internship
+title: Playable Quotes Prototypes and Ideas
 description: An internship with Dr. Adam Smith
-date: 2023-06-19
+date: 2023-06-30
 link: https://tenmile.quote.games/
 tags:
   - portfolio
   - playable-quotes
   - javascript
-  - C
   - prototyping
 layout: layouts/portfolio.njk
 ---

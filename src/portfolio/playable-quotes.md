@@ -28,5 +28,14 @@ An Example of a prototype playable quote: (interacting will not pause the input 
 <tenmile-quote src="https://tenmile.s3.amazonaws.com/STAR%20WARS-N-7482-4bbde532.png" controls autoplay>Luke jumps up and down without any horizontal motion.</tenmile-quote>
 
 ## My Contributions
+My contributions can be broadly categorized into 2 categories.
+* [Prototyping and Ideas](/portfolio/playable-quotes/prototyping-and-ideas)
+* [Mupen64 Savestates](/portfolio/playable-quotes/mupen64-pq)
+
+In [Prototyping and Ideas](/portfolio/playable-quotes/prototyping-and-ideas), which encompasses the first half of my internship, I worked alone and collaboratively to discover and demonstrate use cases and improve ui.
+
+
+In [Mupen64 Savestates](/portfolio/playable-quotes/mupen64-pq), I dive into exploring the possiblity of savestates from a N64 emulator using Mario 64.
+
 
 

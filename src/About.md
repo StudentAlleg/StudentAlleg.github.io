@@ -2,4 +2,4 @@
 layout: layouts/base.njk 
 --- 
   
-{Name}'s In progress Eleventy portfolio/Main website site.
+Owen Peterson's In progress Eleventy portfolio/Main website site.

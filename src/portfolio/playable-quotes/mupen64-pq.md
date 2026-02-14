@@ -12,6 +12,7 @@ tags:
   - prototyping
 layout: layouts/portfolio.njk
 ---
-
+# Mupen64
+[Mupen64Plus](https://mupen64plus.org/) is a N64 emulator. I was tasked with exploring the possiblity of taking the technique used to create quotes from the gameboy emulator and apply it to a more complex, 3d engine. I was ultimately unsuccesful, but did go through some interesting processes and explorations.
 
 TODO: Talk about Mupen64 savestates and specific details, trouble shooting, and documentation
